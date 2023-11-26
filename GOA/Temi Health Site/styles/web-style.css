@@ -1,0 +1,23 @@
+.header .logo .medical {
+    color: green;
+    font-size: 2rem;
+    transition: 0.5s;
+    margin-top: 23px;
+    padding-left: 5px;
+}
+.header .logo .medical:hover {
+    color: black;
+    transition: 0.5s;
+}
+.header .logo h1 {
+    color: black;
+    transition: 0.5s;
+}
+.header .logo h1:hover {
+    color: green;
+    transition: 0.5s;
+}
+.header .logo {
+    display: flex;
+    justify-content: left;
+}

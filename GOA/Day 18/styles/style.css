@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;;
+}
+p {
+    color: green;
+    font-weight: bold;
+}
+h2 {
+    color: red;
+    font-weight: bold;
+    text-decoration: overline green;
+    font-family: 'Mountains of Christmas';
+}
+h3 {
+    color: yellowgreen;
+}

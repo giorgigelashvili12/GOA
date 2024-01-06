@@ -125,3 +125,9 @@ text`
 // same as 
 'some\ntext'
 // cool feature
+// Strings
+let firstName = "Bro";
+let favFood = "Pizza";
+let email = "Pak@gmail.com"
+console.log(`You like ${favFood}`);
+console.log(`Your email is ${email}`);

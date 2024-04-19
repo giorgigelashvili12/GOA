@@ -28,6 +28,12 @@ function submit() {
     let text = inp1.value;
     let color = inp2.value;
 
-    p.textContent = text;
-    p.style.color = color;
+    let allowedColors = ["Green", "Yellow", "Red", "Blue", "Brown", "Black", "Pink", "Purple"];
+    if(allowedColors.includes(color)) {
+        p.textContent = text;
+        p.style.color = color.toLowerCase();
+    }
+    else {
+        alert("The color you entered in doesn't exist in the system or does not exist at all or you might have not followed the instructions.");
+    }
 }

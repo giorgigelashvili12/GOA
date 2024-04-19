@@ -7,20 +7,27 @@ console.log(num1 * num2);
 console.log(num1 / num2);
 
 // 2
-let validationName = prompt("Name Here: ");
-let validationSurname = prompt("Surname Here");
-let validationAge = parseInt(prompt("Age Here: "));
+let inpOne = document.getElementById("inpOne");
+let inpTwo = document.getElementById("inpTwo");
+let inpThree = document.getElementById("inpThree");
+let final = document.getElementById("final");
 
-console.log(`Your name is ${validationName}, your surname is ${validationSurname} and your age is ${validationAge}.`);
+function submitForm() {
+    let name = inpOne.value;
+    let surname = inpTwo.value;
+    let age = inpThree.value;
 
+    final.textContent = `Name: ${name}, Surname: ${surname}, Age: ${age}`;
+}
 // 3
 let p = document.getElementById("p");
 let inp1 = document.getElementById("inp1");
 let inp2 = document.getElementById("inp2");
 
 function submit() {
-    let name = inp1.value;
-    let surname = inp2.value;
+    let text = inp1.value;
+    let color = inp2.value;
 
-    p.textContent = `Name: ${name}. Surname: ${surname}`;
+    p.textContent = text;
+    p.style.color = color;
 }

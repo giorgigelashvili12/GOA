@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 -->
+    <input type="text" id="bg-color" placeholder="Enter color here">
+    <input type="text" id="width" placeholder="Enter width here">
+    <input type="text" id="height" placeholder="Enter height here">
+    <button onclick="change()"></button>
+
+    <div id="prototype"></div>
+
+    <script>
+        // 1
+        let bgColorIdentifier = document.getElementById("bg-color");
+        let widthIdentidier = document.getElementById("width");
+        let heightIdentifier = document.getElementById("height");
+        let divPrototype = document.getElementById("prototype");
+
+        function change() {
+            let allowedColors = ["Green", "Yellow", "Red", "Blue", "Brown", "Black", "Pink", "Purple"];
+
+            let divBg = bgColorIdentifier.value;
+            let divWidth = widthIdentidier.value;
+            let divHeight = heightIdentifier.value;
+
+            if(!isNaN(divWidth)) {
+                divPrototype.style.width = divWidth + "px";
+            } else {
+                alert("Invalid Parameters! " + divWidth + " was given.");
+            }
+
+            if (!isNaN(divHeight)) {
+                divPrototype.style.height = divHeight + "px";
+            } else {
+                alert("Invalid Parameters! " + divHeight + " was given.");  
+            }
+
+            if(allowedColors.includes(divBg)) {
+                divPrototype.style.backgroundColor = divBg;
+                divPrototype.style.width = divWidth;
+                divPrototype.style.height = divHeight;
+            } else {
+                alert("Invalid Parameters! " + divBg + " was given.")
+            }
+        }
+
+        // 2
+        const infoCard = {
+            name: "nameExample",
+            email: "emailExample@gmail.com",
+            age: "Age",
+            work: {
+                money: "money",
+                workTime: "workTime"
+            }
+        }
+
+        console.log(infoCard.name);
+        console.log(infoCard.email);
+        console.log(infoCard.age);
+        console.log(infoCard.work.money.textContent = "idk");
+        console.log(infoCard.workTime.money.textContent = "idk");
+    </script>
+</body>
+</html>

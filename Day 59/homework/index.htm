@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="txt-content" type="text" placeholder="text-content">
+    <input id="color" type="text" placeholder="color">
+    <input id="bg" type="text" placeholder="bg-color">
+    <button onclick="output()"></button>
+    <p id="demo"> </p>
+
+    <button onclick="funct(document.getElementById('demo2').style.color = 'red')"></button>
+    <p id="demo2"></p>
+
+    <script>
+        //1. შექმენით ფუნქცია, რომელსაც გადაეცემა ერთი string და ერთი number. თქვენი დავალებაა, რომ ამ ფუნქციაში მოახდინოთ +, -, *, / ამ ელემენტებზე და კონსოლში დაბეჭდოთ ეს შედეგები.
+        function func(str, num) {
+            console.log(str + num);
+            console.log(str - num);
+            console.log(str * num);
+            console.log(str / num);
+        }
+        func("6", 8);
+
+        // 2. შექმენით ფუნქცია, რომელიც მომხმარებელს შეეკითხება ტექსტს, ფერს და background ფერს. მოწოდებული ინფორმაციით გამოიტანეთ ერთი პარაგრაფი, რომლის ტექსტიც იქნება მომხმარებლის მიერ მოწოდებული, ფერებიც შესაბამისად გამოტანილი.
+        let demo = document.getElementById('demo');
+        let txtContent = document.getElementById('txt-content').toLoweCase();
+        let color = document.getElementById('color').value.toLoweCase();
+        let bg = document.getElementById('bg').value.toLoweCase();
+
+        function output() {
+            let allowedColors = [
+                "red",
+                "blue",
+                "green",
+                "yellow",
+                "orange",
+                "purple",
+                "pink",
+                "cyan",
+                "magenta",
+                "brown",
+                "black",
+                "white",
+                "gray",
+                "silver",
+                "gold"
+            ];
+
+            if(!allowedColors.includes(color)) {
+                alert("Color you entered is invalid or doesn't exist in the system. (Currently)");
+            } else if(!allowedColors.includes(bg)) {
+                alert("background color you entered is invalid or doesn't exist in the system. (Currently)");
+            } else {
+                demo.textContent = demo.value;
+                demo.style.color = color;
+                demo.style.backgroundColor = bg;
+            }
+        }
+
+        //3. შექმენით ფუნქცია, რომელსაც გადაეცემა ორი რიცხვითი მნიშვნელობა. ამ ორ რიცხვს შორის მოახდინეთ შემდეგი შედარებები: >, >=, <, <=, ==, != და დაბეჭდეთ ყველა შედეგი კონსოლში.
+        let num1 = 2;
+        let num2 = 5;
+        console.log(num1 > num2);
+        console.log(num1 >= num2);
+        console.log(num1 < num2);
+        console.log(num1 <= num2);
+        console.log(num1 == num2);
+        console.log(num1 != num2);
+
+        // 4. შექმენით ფუნქცია, რომელსაც გადაეცემა ელემენტი, მის მონაცემთა ტიპს არ აქვს მნიშვნელობა. ფუნქციაში გამოიყენეთ parseInt, parseFloat ამ ელემენტზე და დაბეჭდეთ შედეგები. ფუნქცია გმოიძახეთ რამდენიმეჯერ და გადაეცით სხვადასხვა პარამეტრები.
+        function demo(element) {
+            return parseInt(element);
+            return parseFloat(element);
+        }
+
+        demo(2);
+        demo(967);
+        demo("Hello World");
+
+        // 5. html-ის დოკუმენტში აიღეთ ერთი ღილაკი, რომელსაც დაკლიკებისას შეეცვლება ფერი. ეს გააკეთეთ სამნაირი js-ს გზით: inline, internal, external
+        Dz
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -24,7 +24,14 @@ def get_sum(a,b):
     return result
 
 # 4
-# vergavige 10jer vcade zustad sxvadasxva kodi da mainc ar qna
+def best_friend(txt, a, b):
+    for i in range(len(txt)):
+        if txt[i] == a:
+            if i + 1 == len(txt):
+                return False
+            elif txt[i + 1] != b:
+                return False
+    return True
 
 # 5
 import time
@@ -49,4 +56,20 @@ def find_short(s):
     return minlen
 
 # 7
-# piroba ver gavige, zogi 1 nishniani zogi 2iani da 3iani ratoa
+def find(string):
+    num = int(string[0])
+    answer = num
+    i = 1
+    test = str(num)
+    
+    while test != string:
+        if test == string[:len(test)]:
+            num += 1
+            test += str(num)
+        else:
+            i += 1
+            num = int(string[:i])
+            answer = num
+            test = str(num)
+
+    return answer

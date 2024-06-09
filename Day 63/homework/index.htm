@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: chartreuse;
+        }
+        input {
+            outline: 0;
+            border: 1px solid black;
+            width: 50%;
+            transition: .5s;
+            padding: 10px;
+            text-align: center;
+        }
+        input:focus {
+            width: 80%;
+            border-radius: 20px;
+            transition: .5s;
+        }
+        .login {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            width: 300px;
+            background-color: azure;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        button {
+            border: 0;
+            outline: 0;
+            background-color: darkslategrey;
+            color: white;
+            padding: 10px 63px;
+            cursor: pointer;
+            border: 2px darkslategray;
+        }
+        button:hover {
+            background: none;
+            border: 2px solid darkslategray;
+            color: black;
+        }
+        #style {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul class="navbar">
+            <h3 id="username">Log In For An Account</h3>
+            <img id="accImg" src="" alt="">
+            <h3 id="ageElement"></h3>
+        </ul>
+    </div>
+    <div class="login">
+        <h2>Login Form</h2><br><br>
+        <input id="inp1" type="text" placeholder="Enter Your First Name..."><br>
+        <input id="inp2" type="text" placeholder="Enter Your Last Name..."><br>
+        <input id="inp3" type="number" placeholder="Enter Your Age (Optional)..."><br>
+        <input id="inp4" type="password" placeholder="Enter Your Password..."><br>
+        <button onclick="submitInfo()">Submit</button>
+        <br><br><br>
+        <p id="greet"></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

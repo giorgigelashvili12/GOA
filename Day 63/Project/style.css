@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+    cursor: default;
+}
+.page {
+    padding: 4rem 12rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header ul.navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    list-style: none;
+}
+.header ul.navbar li a {
+    text-decoration: none;
+    color: gray;
+}
+.header ul.navbar li a:hover {
+    color: orangered;
+}
+.middle {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.middle .bottom {
+    display: flex;
+    flex-direction: row;
+}
+.header  .left .top #responsive {
+    width: 20%;
+}
+.middle .left .top img {
+    width: 100%;
+}
+.middle .bottom .left h1 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin:  40px 0px;
+}
+.middle .bottom .left{
+    margin-right: 20px;
+}
+.middle #right {
+    padding: 30px;
+    background-color: rgb(3, 0, 20);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 670px;
+}
+.middle #right h2 {
+    color: rgb(228, 168, 39);
+    font-size: 2rem;
+}
+.middle #right h3:hover {
+    color: rgb(228, 168, 39);
+    cursor: pointer;
+}
+.middle #right .tabs div {
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+.middle #right .tabs div * {
+    padding: 10px 0;
+}
+.middle #right .tabs div p {
+    color: gray;
+    padding-bottom: 40px;
+    border-bottom: 1px solid gray;
+}
+.bottom .right p {
+    float: left;
+    color: gray;
+    margin: 20px;
+    font-size: 1.2rem;
+}
+.bottom .right button {
+    outline: none;
+    border: none;
+    background-color: crimson;
+    color: black;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 20px;
+    cursor: pointer;
+}
+.bottom .right button:hover {
+    background-color: black;
+    color: white;
+}
+.bottom .right {
+    padding: 30px;
+}
+#btm {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+#btm .innerdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+#btm .innerdiv img {
+    width: 40%;
+}
+#btm .innerdiv .right h2 {
+    color: orangered;
+    font-size: 3rem;
+    cursor: pointer;
+}
+#btm .innerdiv .right h3 + p {
+    padding-top: 45px;
+    font-size: larger;
+}
+#btm .innerdiv .right h3:hover {
+    color: orangered;
+    cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+    .page {
+        padding: 2rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header ul.navbar {
+        display: none;
+    }
+    .middle {
+        flex-direction: column;
+    }
+    .middle .bottom {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .middle #right {
+        height: auto;
+        margin-top: 2rem;
+    }
+    #btm {
+        flex-direction: column;
+    }
+    #btm .innerdiv img {
+        width: 40%;
+    }
+    .bottom .right p {
+        margin: 10px;
+    }
+    .bottom .right {
+        padding: 0px;
+    }
+    #btm .innerdiv {
+        margin-bottom: 40px;
+    }
+}

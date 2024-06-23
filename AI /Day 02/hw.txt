@@ -1,0 +1,2 @@
+1.
+letters = open(file.path)

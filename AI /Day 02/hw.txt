@@ -1,2 +1,52 @@
 1.
-letters = open(file.path)
+word = open(file.path)
+n = word[i]
+count = n
+
+if n = n.uppercase then
+    count += 1
+else then   
+    count = count
+
+- If n (letters) is uppercase then add 1 to count for each uppercase letters
+ if not then let the count be default/remain as it was
+
+
+2.
+numbers = [1, 2, 3, ...];
+
+average = numbers.sum : numbers.length
+
+- To calculate the average we divide the sum fo numbers to the count of numbers
+ operations: division, addition; operations count: 2; fastest way possible
+
+
+3.
+if !(a = b) then
+    if !(a = c) then
+        if !(c = b)
+            distinct = [a, b, c]
+        else then
+            distinct = a
+            average = [c, b]
+    else then
+        distinct = b
+        average = [a, c]
+else then 
+    distinct = c
+    average = [a, b]
+
+
+4.
+if a > b then
+    if a > c then
+        return a
+    else then
+        if c > b then
+            return c
+else then
+    if a < b then
+        if b > c then
+            return b
+        else then
+            return c

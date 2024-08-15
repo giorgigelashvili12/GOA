@@ -1,1 +1,1 @@
-# DIDNT HAVE ANY HOMEWORK
+# Codewars Honor -> 49

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1>Platform where you can add any element you like.</h1>
+    
+    <script>
+        const userInput1 = prompt("Enter an element").value.trim();
+        const userInput2 = prompt("Enter an element's content").value.trim();
+
+        function createUserRequest() {
+            const p = document.createElement(userInput1);
+            const txtNode = document.createTextNode(userInput2);
+            p.appendChild(txtNode);
+
+            body.appendChild(p);
+        }
+    </script>
+</body>
+</html>

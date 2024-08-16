@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">Child 1</div>
+        <div class="child2">Child 2</div>
+        <div class="child3">Child 3</div>
+    </div>
+
+    <script>
+        const parentNodeEl = document.querySelector('.parent');
+        const child1 = document.querySelector('.child1');
+        const child2 = document.querySelector('.child2');
+        const child3 = document.querySelector('.child3');
+
+
+        console.log(parentNodeEl.childNodes);
+        console.log(parentNodeEl.firstChild);
+        console.log(parentNodeEl.lastChild);
+        console.log(parentNodeEl.hasChildNodes);
+        console.log(parentNodeEl.nextSibling);
+        console.log(parentNodeEl.previousSibling);
+        console.log(parentNodeEl.parentNode);
+    </script>
+</body>
+</html>

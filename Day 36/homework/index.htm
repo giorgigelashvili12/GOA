@@ -2,6 +2,40 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <style>
+        * {
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: black;
+        }
+        .container, .container .top-row, .container .bottom-nav {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+        .container {
+            padding: 15px;
+            background-color: rgb(63, 63, 63);
+        }
+        .top-row img {
+            width: 10%;
+            border-radius: 100%;
+        }
+        .top-row p span {
+            color: lime;
+        }
+        .bottom-nav ul li a {
+            background-color: lightgray;
+            padding: 15px 20px;
+            border-radius: 10px;
+            outline: 0;
+            border: 0;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <div class="container">

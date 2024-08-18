@@ -5,24 +5,24 @@ let y = 0;
 let direct = "right"
 
 const moveRight = setInterval(function(){
-    if(direct == "right"){
+    if(direct === "right"){
         left++;
         if(left == 300){
-            direct = "bottom"
+            direct == "bottom"
         }
-    } else if(direct == "bottom"){
+    } else if(direct === "bottom"){
         y++;
         if(y == 300){
-            direct = "left";
+            direct == "left";
         }
-    } else if(direct == "left"){
+    } else if(direct === "left"){
         left--;
         if(left == 0){
-            direct = "top"
+            direct == "top"
         }
     } else{
         y--;
-        if(y == 0 && left == 0){
+        if(y === 0 && left === 0){
             clearInterval(moveRight);
         }
     }

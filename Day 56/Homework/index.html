@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="width" id="width">
+    <input type="text" placeholder="height" id="height">
+    <input type="text" placeholder="color" id="color">
+    <button onclick="submitParameters()">Submit</button>
+    <div id="result"></div>
+
+    <script>
+        const widthInp = document.getElementById('width').value;
+        const heightInp = document.getElementById('height').value;
+        const colorInp = document.getElementById('color').value;
+        const result = document.getElementById('result');
+
+        function submitParameters() {
+            result.style.width = widthInp;
+            result.style.color = colorInp;
+            result.style.height = heightInp;
+        }
+    </script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+<div align='center'>
 ## <div align="center">I'm Giorgi. Junior Programmer</div>  
 <div align='center'><img src='GOA Projects/image.png' height='100'/></div>
   
@@ -33,11 +34,7 @@
 <div align="center">  
 <a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>  
 <a href="https://www.python.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" /></a>  
-</div>
-
-</td><td valign="top" width="33%">
-
-
+</div
 
 </td></tr></table>  
 
@@ -64,3 +61,4 @@
 <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=Gio&theme=dracula&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" /></a>
 
 <br/>  
+</div>

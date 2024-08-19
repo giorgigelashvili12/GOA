@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="src/images/logo.png" height="80" />
+<img src='GOA Projects/image.png' height='80'/>
 
 # Github Profilinator
 

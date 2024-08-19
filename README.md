@@ -1,5 +1,5 @@
 <div align='center'>
-## <div align="center">I'm Giorgi. Junior Programmer</div>  
+<div align="center">I'm Giorgi. Junior Programmer</div>  
 <div align='center'><img src='GOA Projects/image.png' height='100'/></div>
   
 

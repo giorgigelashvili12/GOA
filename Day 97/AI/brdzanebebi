@@ -1,0 +1,7 @@
+time find /usr -type f -name 'stdio.h'
+find file named 'stdio.h'
+
+-iname: case sensetive
+time find /usr -type f -iname '*stdio.h*' -print 2>/dev/null (errors)
+
+0m0.063s - time command duration

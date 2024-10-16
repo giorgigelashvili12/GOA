@@ -1,7 +1,8 @@
 /* K&R 29pg:43epg 
   external ცვლადებით 32-33pg:46-47epg
-  getline სხვა ვერსია 69pg:83epg/
+  getline სხვა ვერსია 69pg:83epg */
 #include <stdio.h>
+
 #define MAXLINE 1000 /* maximum input line size */
 
 int get_line(char line[], int maxline);
@@ -50,3 +51,4 @@ int i = 0;
 while ((to[i] = from[i]) != '\0')
     ++i;
 }
+

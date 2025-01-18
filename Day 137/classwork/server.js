@@ -6,36 +6,35 @@ const app = express();
 
 const { User, Product, Order } = require("./models");
 
-const seedData = async () => {
+const seedData = async (db) => {
   try {
-    await User.deleteMany();
-    await Product.deleteMany();
-    await Order.deleteMany();
+    // Drop collections (this will remove both data and structure)
+    await db.collection("users").drop();
+    await db.collection("products").drop();
+    await db.collection("orders").drop();
 
-    const users = await User.insertMany([
-      { name: "John Doe", email: "john@example.com" },
-      { name: "Jane Smith", email: "jane@example.com" },
-    ]);
-
-    const products = await Product.insertMany([
-      { name: "Laptop", price: 1200 },
-      { name: "Phone", price: 800 },
-    ]);
-
-    const orders = await Order.insertMany([
-      { productId: products[0]._id, userId: users[0]._id, quantity: 1 },
-      { productId: products[1]._id, userId: users[1]._id, quantity: 2 },
-    ]);
-
-    console.log("Data seeded successfully.");
+    console.log("Collections dropped successfully.");
   } catch (error) {
-    console.error("Error seeding data:", error);
+    console.error("Error dropping collections:", error);
   }
 };
+
+const startServer = async () => {
+  try {
+    const connection = await connectDB();
+
+    await seedData(connection.connection.db);
+
+    app.listen(3000, () => {
+      console.log('App listening on port 3000');
+    });
+  } catch (error) {
+    console.error("Error during server start:", error);
+  }
+};
+
+startServer();
 
 app.get('/', (req, res) => {
     res.send('Hello world');
 });
-
-const PORT = process.env.PORT;
-app.listen(3000, () => console.log('App listening on port', PORT), connectDB().then(seedData));

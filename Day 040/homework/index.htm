@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page {
+            height: 100vh;
+            background-image: linear-gradient(purple, rgb(0, 128, 255));
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+        }
+        .header ul li a::after {
+            content: ' >';
+        }
+        .header ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 1rem;
+            list-style: none;
+        }
+        .header button {
+            outline: 0;
+            border: 0;
+            padding: 15px 25px;
+            background-color: blueviolet;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        .header a {
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: white;
+        }
+        .hero .left .top ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        .hero .left .top ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+        .hero .left .mid h1 {
+            color: white;
+        }
+        .hero .left .mid p {
+            color: white;
+        }
+        .hero .left .bottom button {
+            outline: 0;
+            border: 0;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .hero .left .bottom .active {
+            color: purple;
+            background-color: white;
+        }
+        .hero .left .bottom .non-active {
+            background-color: purple;
+            color: white;
+        }
+        .hero .left{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <a href="index.htm">TECHVIO</a>
+
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <button>Get It Support</button>
+        </div>
+
+        <div class="hero">
+            <div class="left">
+                <div class="top">
+                    <ul>
+                        <li><a href="">f</a></li>
+                        <li><a href="">T</a></li>
+                        <li><a href="">I</a></li>
+                        <li><a href="">Y</a></li>
+                    </ul>
+                </div>
+
+                <div class="mid">
+                    <h1>IT Solutions & Business Services Company</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis doloribus quos facilis qui commodi facere cum adipisci velit ipsam repellat, quaerat, saepe cumque. Repudiandae, assumenda porro iste dolorem laborum voluptatem.</p>
+                </div>
+
+                <div class="bottom">
+                    <button class="active">Our Service</button>
+                    <button class="non-active">Contact Us</button>
+                </div>
+            </div>
+
+            <div class="right">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%); 
+    margin: 2rem; 
+}
+img {
+    max-width: 100%;
+    display: block;
+    
+}
+.main {
+    max-width: 650px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 2rem;
+    
+}
+.main .recipe-img img {
+    border-radius: 0.6rem;
+}
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.4rem;
+    color: hsl(24, 5%, 18%);
+}
+h2 {
+    font-size: 1.7rem;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1rem; 
+}
+h3 {
+    color: hsl(332, 51%, 32%);
+}
+hr {
+    border: 1px solid hsl(30, 18%, 87%);
+    margin: 2rem 0;
+}
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 0.8rem;
+    padding-left: 1.7rem;
+    border-radius: 1rem;
+}
+.prep-time span,
+.instructions span {
+    color: hsl(30, 10%, 34%);
+    font-weight: bold;
+}
+ul, ol {
+    padding-left: 1.25rem;
+}
+li {
+    padding-left: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+.prep-time li::marker {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+.ingredients li::marker, .instructions li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+table, td {
+    min-width: 100%;
+    border-collapse: collapse;
+}
+.table-data {
+    margin-left: 2rem;
+}
+caption {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.num {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+    padding: 0.8rem;
+}
+.border-bottom {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.border-bottom:last-child {
+    border-bottom: 0;
+}
+@media screen and (max-width: 520px) {
+    .recipe-img {
+        position: relative;
+        left: -2rem;
+        right: -2rem;
+        top: -2rem;
+        width: calc(100% + 4rem);
+        border-radius: 0;
+    }
+    .main .recipe-img img {
+        border-radius: 0;
+    }
+    body {
+        margin: 0;
+    }
+    h1 {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jorjis banki</h1>
+    <form action=''>
+        <h1>Sheni fuli: <span id="yormani"></span></h1>
+        <h4>Statusi: <span id="statusi"></span></h4>
+        <input type="text" placeholder="angarishi" id="angarishi">
+        <input type="text" placeholder="sheitane" id="sheitane">
+        <input type="text" placeholder="gaitane" id="gaitane">
+        <button onclick="dadastureba()">Dadasturebulebis gilaki</button>
+    </form>
+
+    <script>
+        const amount = document.getElementById('yormani');
+        const status = document.getElementById('statusi');
+
+        const accountAmount = document.getElementById('angarishi');
+        const sheitane = document.getElementById('sheitane');
+        const gaitane = document.getElementById('gaitane');
+
+        function dadastureba() {
+            amount.textContent = accountAmount.value;
+            amount.value + sheitane.value;
+            amount.vlaue - gaitane.value;
+        }
+    </script>
+</body>
+</html>

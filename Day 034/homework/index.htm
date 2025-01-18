@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        header ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 4rem;
+        }
+        header ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        .cart-btn {
+            background: none;
+            border: 2px solid yellow;
+            padding: 6px 14px;
+        }
+        .bx-menu {
+            font-size: 2rem;
+        }
+        input {
+            background: none;
+            border: none;
+            padding: 6px;
+        }
+        input::placeholder {
+            font-size: larger;
+        }
+        .top-nav ul li h1 a {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <ul>
+                <li><p>Shipping</p></li>
+                <li><h1><a href="index.htm">GOOD MENS GOODS</a></h1></li>
+                <li><a class="cart-btn" href="">CART (0)</a></li>
+            </ul>
+        </div>
+        <div class="bottom-nav">
+            <ul>
+                <li><i class='bx bx-menu'></i></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Designers</a></li>
+                <li><a href="">Clothing</a></li>
+                <li><a href="">Footwear</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">The Journal</a></li>
+                <li><input placeholder="Search..." type="text" name="search-bar" id="srchvar"><i class='bx bx-search-alt-2' ></i></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

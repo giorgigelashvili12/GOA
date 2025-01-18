@@ -1,5 +1,0 @@
-crtl + r - find old command
-shift + g - move on last line
-g * 2 - move on first line
-dd - delete line
-yy - copy line

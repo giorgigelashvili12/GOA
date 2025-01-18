@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #1A1A1D;
+    color: whitesmoke;
+}
+/*header + about me*/
+section {
+    background-color: #4E4E50;
+}
+.container {
+    border-radius: 20px;
+}
+header {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #4E4E50;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 17px 40px -1px rgba(0,0,0,0.75);
+    -webkit-box-hadow: 0px 17px 40px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 17px 40px -1px rgba(0,0,0,0.75);
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: 650;
+    font-size: larger;
+}
+header ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #C3073F;
+    border: 4px;
+    scale: .1;
+    transform-origin: right;
+    transition: 0.5s;
+}
+header ul li a:hover::before {
+    scale: 1;
+}
+header ul li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+.container .content {
+    margin-top: 40px;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+}
+.container .h2 {
+    margin-top: 40px;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+}
+header a.logo {
+    font-weight: 900;
+    font-size: 2.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #C3073F;
+    text-shadow: 4px 4px 0px rgba(149,7,64,0.82);
+}
+.container .img-box img {
+    width: 40%;
+    border-radius: 100%;
+    margin-left: 10rem;
+    margin-top: -4rem;
+}
+h2 span {
+    color: #C3073F;
+    text-shadow: 4px 1px 0px rgba(149,7,64,1);
+}
+@media screen and (max-width: 500px) {
+    section {
+        padding: 50px 10px 10px;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .container .img-box img {
+        margin: 0;
+    }
+    ul li a {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+}
+
+.icon a {
+    text-decoration: none;
+    background-color: #f1f1f1;
+    padding: 6px;
+    border-radius: 100%;
+    font-size: 30px;
+    color: #4E4E50;
+    transition: 0.5s;
+}
+
+.icon a.bxl-facebook-circle:hover {
+    color: blue;
+    transition: 0.5s;
+}
+.icon a.bxl-youtube:hover {
+    color: red;
+    transition: 0.5s;
+}
+.icon a.bxl-instagram-alt:hover {
+    color: deeppink;
+    transition: 0.5s;
+}
+.icon a.bxl-tiktok:hover {
+    color: #1A1A1D;
+    transition: 0.5s;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+input.email-inp {
+    padding: 10px 100px;
+    background-color: #4E4E50;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+input.msg-inp {
+    padding: 60px 100px;
+    background-color: #4E4E50;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #C3073F;
+    padding: 10px 40px;
+    color: #f1f1f1f1;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.footer .footer-content p {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.icon a {
+    margin-right: 1rem;
+}
+.up {
+    position: fixed;
+    text-decoration: none;
+    background-color: #C3073F;
+    padding: 5px;
+    color: #f1f1f1;
+    border-radius: 10px;
+    top: 15rem;
+    border-radius: 2px solid #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.code {
+    background-color: #1A1A1D;
+    border-radius: 10px;
+}
+.grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.top-tab {
+    background-color: #4E4E50;
+    display: flex;
+    gap: 0.4rem;
+    padding: 8.5px;
+    border-top-left-radius: 20px;
+}
+.top-tab .circle1 {
+    background-color: red;
+    padding: 6px;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.top-tab .circle2 {
+    background-color: yellow;
+    padding: 6px;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.top-tab .circle3 {
+    background-color: green;
+    padding: 6px;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.bottom-tab p b {
+    color: #f1f1f1;
+}
+.bottom-tab, .closehtmltag .htmltag p {
+    color: pink;
+}
+.bottom-tab .h1tag span {
+    color: #f1f1f1;
+}
+.bottom-tab .h1tag p {
+    color: greenyellow;
+}
+.grid .card {
+    border-radius: 20px;
+    width: 100%;
+    background-color: #C3073F;
+    padding: 5px;
+    transition: 0.3s;
+}
+.grid .card:hover {
+    transition: 0.3s;
+    width: 135%;
+}
+.bottom-tab {
+    padding: 10px;
+}
+.fullcode p span {
+    padding: 0.001vh 10px;
+    background-color: red;
+    margin: 2.9px;
+    border: 1px solid #000000;
+}
+.bottom-tab .style {
+    color: lightskyblue;
+}
+
+/* js card styles */
+.bottom-tab .script p {
+    color: #f1f1f1;
+}
+.bottom-tab .script b {
+    color: lightcoral;
+}
+.bottom-tab .script span {
+    color: yellow;
+}
+.bottom-tab .script i {
+    color: antiquewhite;
+}
+.bottom-tab .script em {
+    color: darkolivegreen;
+}
+.empty {
+    background-color: #4E4E50;
+    font-size: 35px;
+}
+.project {
+    text-align: center;
+}
+.project i, b {
+    font-size: larger;
+}
+.project a.more {
+    background-color: tomato;
+    border-radius: 1px solid #000000;
+    text-decoration: none;
+    color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+}
+.pycode p b {
+    color: orangered;
+    font-size: medium;
+}
+.pycode p {
+    color: #f1f1f1;
+}
+.pycode span {
+    color: purple;
+}
+.pycode em {
+    color: lightgreen;
+}
+.pycode i {
+    color: darkolivegreen;
+}
+.active {
+    background-color: #C3073F;
+    padding: 10px;
+    border-radius: 10px;
+}

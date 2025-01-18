@@ -1,0 +1,11 @@
+whoami
+pwd
+ls
+ls -ah
+ls -ahl
+ls --help
+ls --help | more
+q                             
+df -h
+top
+h

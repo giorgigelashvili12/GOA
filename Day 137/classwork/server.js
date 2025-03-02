@@ -8,7 +8,6 @@ const { User, Product, Order } = require("./models");
 
 const seedData = async (db) => {
   try {
-    // Drop collections (this will remove both data and structure)
     await db.collection("users").drop();
     await db.collection("products").drop();
     await db.collection("orders").drop();

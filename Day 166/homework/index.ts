@@ -47,4 +47,4 @@ function welcome(role: Role): string {
     }
       
     return "Unknown role";
-}
+ }
